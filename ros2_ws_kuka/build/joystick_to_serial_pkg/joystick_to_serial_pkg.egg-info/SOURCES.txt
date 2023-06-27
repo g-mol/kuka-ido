@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/PKG-INFO
+../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/SOURCES.txt
+../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/dependency_links.txt
+../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/entry_points.txt
+../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/requires.txt
+../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/top_level.txt
+../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/zip-safe
+joystick_to_serial_pkg/__init__.py
+joystick_to_serial_pkg/joystick_to_serial_node.py
+resource/joystick_to_serial_pkg
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/PKG-INFO
+../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/SOURCES.txt
+../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/dependency_links.txt
+../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/entry_points.txt
+../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/requires.txt
+../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/top_level.txt
+../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/zip-safe
+kuka_msgs_pkg/__init__.py
+resource/kuka_msgs_pkg
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

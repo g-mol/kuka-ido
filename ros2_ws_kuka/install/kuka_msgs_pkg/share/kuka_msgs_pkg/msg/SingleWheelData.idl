@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from kuka_msgs_pkg/msg/SingleWheelData.msg
+// generated code does not contain a copyright notice
+
+
+module kuka_msgs_pkg {
+  module msg {
+    struct SingleWheelData {
+      float position;
+    };
+  };
+};

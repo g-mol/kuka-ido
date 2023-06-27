@@ -1,0 +1,38 @@
+[0.903s] Invoking command in '/home/geert/ros2_ws_git/src/joystick_to_serial_pkg': PYTHONPATH=/home/geert/ros2_ws_git/build/joystick_to_serial_pkg/prefix_override:/home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/joystick_to_serial_pkg build --build-base /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build install --record /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/install.log --single-version-externally-managed
+[1.238s] running egg_info
+[1.239s] creating ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info
+[1.240s] writing ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/PKG-INFO
+[1.240s] writing dependency_links to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/dependency_links.txt
+[1.240s] writing entry points to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/entry_points.txt
+[1.240s] writing requirements to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/requires.txt
+[1.241s] writing top-level names to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/top_level.txt
+[1.241s] writing manifest file '../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/SOURCES.txt'
+[1.243s] reading manifest file '../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/SOURCES.txt'
+[1.245s] writing manifest file '../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/SOURCES.txt'
+[1.245s] running build
+[1.245s] running build_py
+[1.245s] creating /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build
+[1.246s] creating /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build/lib
+[1.246s] creating /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg
+[1.246s] copying joystick_to_serial_pkg/joystick_to_serial_node.py -> /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg
+[1.246s] copying joystick_to_serial_pkg/__init__.py -> /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg
+[1.247s] running install
+[1.248s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.248s]   warnings.warn(
+[1.248s] running install_lib
+[1.249s] creating /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg
+[1.250s] copying /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg/joystick_to_serial_node.py -> /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg
+[1.250s] copying /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg/__init__.py -> /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg
+[1.250s] byte-compiling /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg/joystick_to_serial_node.py to joystick_to_serial_node.cpython-310.pyc
+[1.251s] byte-compiling /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg/__init__.py to __init__.cpython-310.pyc
+[1.251s] running install_data
+[1.252s] creating /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/share/ament_index
+[1.252s] creating /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/share/ament_index/resource_index
+[1.252s] creating /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/share/ament_index/resource_index/packages
+[1.253s] copying resource/joystick_to_serial_pkg -> /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/share/ament_index/resource_index/packages
+[1.253s] copying package.xml -> /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/share/joystick_to_serial_pkg
+[1.253s] running install_egg_info
+[1.255s] Copying ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info to /home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg-0.0.0-py3.10.egg-info
+[1.256s] running install_scripts
+[1.281s] writing list of installed files to '/home/geert/ros2_ws_git/build/joystick_to_serial_pkg/install.log'
+[1.303s] Invoked command in '/home/geert/ros2_ws_git/src/joystick_to_serial_pkg' returned '0': PYTHONPATH=/home/geert/ros2_ws_git/build/joystick_to_serial_pkg/prefix_override:/home/geert/ros2_ws_git/install/joystick_to_serial_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/joystick_to_serial_pkg build --build-base /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/build install --record /home/geert/ros2_ws_git/build/joystick_to_serial_pkg/install.log --single-version-externally-managed

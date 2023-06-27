@@ -1,0 +1,26 @@
+[0.864s] Invoking command in '/home/geert/ros2_ws_git/src/serial_communication_pkg': PYTHONPATH=/home/geert/ros2_ws_git/build/serial_communication_pkg/prefix_override:/home/geert/ros2_ws_git/install/serial_communication_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/serial_communication_pkg build --build-base /home/geert/ros2_ws_git/build/serial_communication_pkg/build install --record /home/geert/ros2_ws_git/build/serial_communication_pkg/install.log --single-version-externally-managed
+[1.210s] running egg_info
+[1.211s] writing ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/PKG-INFO
+[1.212s] writing dependency_links to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/dependency_links.txt
+[1.212s] writing entry points to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/entry_points.txt
+[1.212s] writing requirements to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/requires.txt
+[1.213s] writing top-level names to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/top_level.txt
+[1.215s] reading manifest file '../../build/serial_communication_pkg/serial_communication_pkg.egg-info/SOURCES.txt'
+[1.216s] writing manifest file '../../build/serial_communication_pkg/serial_communication_pkg.egg-info/SOURCES.txt'
+[1.217s] running build
+[1.217s] running build_py
+[1.217s] copying serial_communication_pkg/serial_communication_node.py -> /home/geert/ros2_ws_git/build/serial_communication_pkg/build/lib/serial_communication_pkg
+[1.218s] running install
+[1.218s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.218s]   warnings.warn(
+[1.219s] running install_lib
+[1.219s] copying /home/geert/ros2_ws_git/build/serial_communication_pkg/build/lib/serial_communication_pkg/serial_communication_node.py -> /home/geert/ros2_ws_git/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg
+[1.220s] byte-compiling /home/geert/ros2_ws_git/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg/serial_communication_node.py to serial_communication_node.cpython-310.pyc
+[1.221s] running install_data
+[1.222s] running install_egg_info
+[1.224s] removing '/home/geert/ros2_ws_git/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.225s] Copying ../../build/serial_communication_pkg/serial_communication_pkg.egg-info to /home/geert/ros2_ws_git/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg-0.0.0-py3.10.egg-info
+[1.226s] running install_scripts
+[1.252s] Installing serial_communication_node script to /home/geert/ros2_ws_git/install/serial_communication_pkg/lib/serial_communication_pkg
+[1.252s] writing list of installed files to '/home/geert/ros2_ws_git/build/serial_communication_pkg/install.log'
+[1.291s] Invoked command in '/home/geert/ros2_ws_git/src/serial_communication_pkg' returned '0': PYTHONPATH=/home/geert/ros2_ws_git/build/serial_communication_pkg/prefix_override:/home/geert/ros2_ws_git/install/serial_communication_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/serial_communication_pkg build --build-base /home/geert/ros2_ws_git/build/serial_communication_pkg/build install --record /home/geert/ros2_ws_git/build/serial_communication_pkg/install.log --single-version-externally-managed

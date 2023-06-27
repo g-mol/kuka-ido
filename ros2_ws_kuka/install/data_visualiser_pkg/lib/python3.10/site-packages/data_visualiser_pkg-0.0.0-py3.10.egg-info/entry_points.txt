@@ -1,0 +1,3 @@
+[console_scripts]
+data_visualiser_node = data_visualiser_pkg.data_visualiser_node:main
+

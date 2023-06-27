@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "kuka_msgs_pkg/msg/SingleWheelData",
+      "fields": [
+        {
+          "name": "position",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "kuka_msgs_pkg/msg/SingleWheelData",
+      "hash_string": "RIHS01_58ef23ee4c73b94d8d54772258e23ee332d5fb7dea97e10ae4bc1ce64b86251e"
+    }
+  ]
+}

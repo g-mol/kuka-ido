@@ -1,0 +1,22 @@
+[1.462s] Invoking command in '/home/geert/ros2_ws_git/src/kuka_launch_pkg': PYTHONPATH=/home/geert/ros2_ws_git/build/kuka_launch_pkg/prefix_override:/home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kuka_launch_pkg build --build-base /home/geert/ros2_ws_git/build/kuka_launch_pkg/build install --record /home/geert/ros2_ws_git/build/kuka_launch_pkg/install.log --single-version-externally-managed
+[1.855s] running egg_info
+[1.857s] writing ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/PKG-INFO
+[1.857s] writing dependency_links to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/dependency_links.txt
+[1.858s] writing entry points to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/entry_points.txt
+[1.858s] writing requirements to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/requires.txt
+[1.859s] writing top-level names to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/top_level.txt
+[1.861s] reading manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'
+[1.873s] writing manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'
+[1.874s] running build
+[1.874s] running build_py
+[1.874s] running install
+[1.875s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.875s]   warnings.warn(
+[1.875s] running install_lib
+[1.877s] running install_data
+[1.878s] running install_egg_info
+[1.887s] removing '/home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.888s] Copying ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info to /home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg-0.0.0-py3.10.egg-info
+[1.889s] running install_scripts
+[1.923s] writing list of installed files to '/home/geert/ros2_ws_git/build/kuka_launch_pkg/install.log'
+[1.964s] Invoked command in '/home/geert/ros2_ws_git/src/kuka_launch_pkg' returned '0': PYTHONPATH=/home/geert/ros2_ws_git/build/kuka_launch_pkg/prefix_override:/home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kuka_launch_pkg build --build-base /home/geert/ros2_ws_git/build/kuka_launch_pkg/build install --record /home/geert/ros2_ws_git/build/kuka_launch_pkg/install.log --single-version-externally-managed

@@ -1,0 +1,37 @@
+[1.928s] Invoking command in '/home/geert/ros2_ws_git/src/kuka_launch_pkg': PYTHONPATH=/home/geert/ros2_ws_git/build/kuka_launch_pkg/prefix_override:/home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kuka_launch_pkg build --build-base /home/geert/ros2_ws_git/build/kuka_launch_pkg/build install --record /home/geert/ros2_ws_git/build/kuka_launch_pkg/install.log --single-version-externally-managed
+[2.672s] running egg_info
+[2.673s] creating ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info
+[2.673s] writing ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/PKG-INFO
+[2.674s] writing dependency_links to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/dependency_links.txt
+[2.674s] writing entry points to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/entry_points.txt
+[2.674s] writing requirements to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/requires.txt
+[2.675s] writing top-level names to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/top_level.txt
+[2.677s] writing manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'
+[2.683s] reading manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'
+[2.684s] writing manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'
+[2.685s] running build
+[2.685s] running build_py
+[2.685s] creating /home/geert/ros2_ws_git/build/kuka_launch_pkg/build
+[2.685s] creating /home/geert/ros2_ws_git/build/kuka_launch_pkg/build/lib
+[2.685s] creating /home/geert/ros2_ws_git/build/kuka_launch_pkg/build/lib/kuka_launch_pkg
+[2.686s] copying kuka_launch_pkg/__init__.py -> /home/geert/ros2_ws_git/build/kuka_launch_pkg/build/lib/kuka_launch_pkg
+[2.686s] running install
+[2.686s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.688s]   warnings.warn(
+[2.688s] running install_lib
+[2.690s] creating /home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg
+[2.691s] copying /home/geert/ros2_ws_git/build/kuka_launch_pkg/build/lib/kuka_launch_pkg/__init__.py -> /home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg
+[2.695s] byte-compiling /home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg/__init__.py to __init__.cpython-310.pyc
+[2.695s] running install_data
+[2.696s] creating /home/geert/ros2_ws_git/install/kuka_launch_pkg/share/ament_index
+[2.696s] creating /home/geert/ros2_ws_git/install/kuka_launch_pkg/share/ament_index/resource_index
+[2.696s] creating /home/geert/ros2_ws_git/install/kuka_launch_pkg/share/ament_index/resource_index/packages
+[2.696s] copying resource/kuka_launch_pkg -> /home/geert/ros2_ws_git/install/kuka_launch_pkg/share/ament_index/resource_index/packages
+[2.697s] copying package.xml -> /home/geert/ros2_ws_git/install/kuka_launch_pkg/share/kuka_launch_pkg
+[2.697s] creating /home/geert/ros2_ws_git/install/kuka_launch_pkg/share/kuka_launch_pkg/launch
+[2.697s] copying launch/kuka_launch_node.py -> /home/geert/ros2_ws_git/install/kuka_launch_pkg/share/kuka_launch_pkg/launch
+[2.697s] running install_egg_info
+[2.707s] Copying ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info to /home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg-0.0.0-py3.10.egg-info
+[2.708s] running install_scripts
+[2.765s] writing list of installed files to '/home/geert/ros2_ws_git/build/kuka_launch_pkg/install.log'
+[2.839s] Invoked command in '/home/geert/ros2_ws_git/src/kuka_launch_pkg' returned '0': PYTHONPATH=/home/geert/ros2_ws_git/build/kuka_launch_pkg/prefix_override:/home/geert/ros2_ws_git/install/kuka_launch_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kuka_launch_pkg build --build-base /home/geert/ros2_ws_git/build/kuka_launch_pkg/build install --record /home/geert/ros2_ws_git/build/kuka_launch_pkg/install.log --single-version-externally-managed
