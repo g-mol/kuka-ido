@@ -1,0 +1,4 @@
+Invoking command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg -- -j1 -l1
+Invoked command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg -- -j1 -l1
+Invoking command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg
+Invoked command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg

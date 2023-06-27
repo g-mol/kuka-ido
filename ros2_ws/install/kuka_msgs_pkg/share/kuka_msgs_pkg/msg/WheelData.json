@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "kuka_msgs_pkg/msg/WheelData",
+      "fields": [
+        {
+          "name": "position",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "velocity",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "kuka_msgs_pkg/msg/WheelData",
+      "hash_string": "RIHS01_1bcf703f3d718aee78b2286ae934c6745621ff168acc59c2e275049e4a635342"
+    }
+  ]
+}

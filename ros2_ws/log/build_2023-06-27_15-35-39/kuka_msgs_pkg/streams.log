@@ -1,0 +1,232 @@
+[0.030s] Invoking command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron /usr/bin/cmake /home/geert/kuka-ido/ros2_ws/src/kuka_msgs_pkg -DCMAKE_INSTALL_PREFIX=/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg
+[0.267s] -- The C compiler identification is GNU 11.3.0
+[0.443s] -- The CXX compiler identification is GNU 11.3.0
+[0.466s] -- Detecting C compiler ABI info
+[0.594s] -- Detecting C compiler ABI info - done
+[0.614s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.616s] -- Detecting C compile features
+[0.617s] -- Detecting C compile features - done
+[0.626s] -- Detecting CXX compiler ABI info
+[0.756s] -- Detecting CXX compiler ABI info - done
+[0.777s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.777s] -- Detecting CXX compile features
+[0.778s] -- Detecting CXX compile features - done
+[0.796s] -- Found ament_cmake: 2.0.2 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.090s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.306s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[1.317s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.443s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.564s] -- Found rosidl_adapter: 4.0.0 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[2.012s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[2.288s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.619s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.647s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[2.650s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[2.700s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[2.700s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.700s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.700s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.736s] -- Found PythonExtra: .so  
+[2.793s] -- Found ament_lint_auto: 0.14.1 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[2.827s] -- Added test 'lint_cmake' to check CMake code style
+[2.829s] -- Added test 'xmllint' to check XML markup files
+[2.833s] -- Configuring done
+[2.880s] -- Generating done
+[2.884s] -- Build files have been written to: /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg
+[2.893s] Invoked command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron /usr/bin/cmake /home/geert/kuka-ido/ros2_ws/src/kuka_msgs_pkg -DCMAKE_INSTALL_PREFIX=/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg
+[2.893s] Invoking command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron /usr/bin/cmake --build /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg -- -j1 -l1
+[2.936s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.333s] [  2%] Built target kuka_msgs_pkg__rosidl_generator_type_description
+[3.349s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.776s] [  5%] Built target kuka_msgs_pkg__cpp
+[3.785s] [  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.319s] [ 11%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_c.dir/rosidl_generator_c/kuka_msgs_pkg/msg/detail/wheel_data__description.c.o[0m
+[4.398s] [ 14%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_c.dir/rosidl_generator_c/kuka_msgs_pkg/msg/detail/wheel_data__functions.c.o[0m
+[4.460s] [ 17%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_c.dir/rosidl_generator_c/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c.o[0m
+[4.490s] [ 20%] [32m[1mLinking C shared library libkuka_msgs_pkg__rosidl_generator_c.so[0m
+[4.529s] [ 20%] Built target kuka_msgs_pkg__rosidl_generator_c
+[4.550s] [ 23%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.927s] [ 26%] [32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/kuka_msgs_pkg/msg/wheel_data__type_support.cpp.o[0m
+[5.442s] [ 29%] [32m[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_cpp.so[0m
+[5.496s] [ 29%] Built target kuka_msgs_pkg__rosidl_typesupport_cpp
+[5.504s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.955s] [ 35%] [32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/kuka_msgs_pkg/msg/detail/wheel_data__type_support_c.cpp.o[0m
+[6.408s] [ 38%] [32m[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[6.479s] [ 38%] Built target kuka_msgs_pkg__rosidl_typesupport_fastrtps_c
+[6.487s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.949s] [ 44%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c.o[0m
+[7.003s] [ 47%] [32m[1mLinking C shared library libkuka_msgs_pkg__rosidl_typesupport_introspection_c.so[0m
+[7.045s] [ 47%] Built target kuka_msgs_pkg__rosidl_typesupport_introspection_c
+[7.057s] [ 50%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.440s] [ 52%] [32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/kuka_msgs_pkg/msg/wheel_data__type_support.cpp.o[0m
+[7.494s] [ 55%] [32m[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_c.so[0m
+[7.538s] [ 55%] Built target kuka_msgs_pkg__rosidl_typesupport_c
+[7.562s] [ 58%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.996s] [ 61%] [32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/wheel_data__type_support.cpp.o[0m
+[8.647s] [ 64%] [32m[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[8.732s] [ 64%] Built target kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp
+[8.741s] [ 67%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.211s] [ 70%] [32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/kuka_msgs_pkg/msg/detail/wheel_data__type_support.cpp.o[0m
+[9.760s] [ 73%] [32m[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[9.805s] [ 73%] Built target kuka_msgs_pkg__rosidl_typesupport_introspection_cpp
+[9.823s] [ 73%] Built target kuka_msgs_pkg
+[9.858s] [ 73%] Built target ament_cmake_python_copy_kuka_msgs_pkg
+[10.237s] running egg_info
+[10.238s] creating kuka_msgs_pkg.egg-info
+[10.238s] writing kuka_msgs_pkg.egg-info/PKG-INFO
+[10.238s] writing dependency_links to kuka_msgs_pkg.egg-info/dependency_links.txt
+[10.238s] writing top-level names to kuka_msgs_pkg.egg-info/top_level.txt
+[10.239s] writing manifest file 'kuka_msgs_pkg.egg-info/SOURCES.txt'
+[10.241s] reading manifest file 'kuka_msgs_pkg.egg-info/SOURCES.txt'
+[10.242s] writing manifest file 'kuka_msgs_pkg.egg-info/SOURCES.txt'
+[10.277s] [ 73%] Built target ament_cmake_python_build_kuka_msgs_pkg_egg
+[10.294s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.852s] [ 76%] Built target kuka_msgs_pkg__py
+[10.869s] [ 79%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_py.dir/rosidl_generator_py/kuka_msgs_pkg/msg/_wheel_data_s.c.o[0m
+[11.081s] [ 82%] [32m[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/libkuka_msgs_pkg__rosidl_generator_py.so[0m
+[11.127s] [ 82%] Built target kuka_msgs_pkg__rosidl_generator_py
+[11.143s] [ 85%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.267s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.313s] [ 88%] Built target kuka_msgs_pkg__rosidl_typesupport_fastrtps_c__pyext
+[11.332s] [ 91%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.452s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.497s] [ 94%] Built target kuka_msgs_pkg__rosidl_typesupport_introspection_c__pyext
+[11.518s] [ 97%] [32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[11.638s] [100%] [32m[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.671s] [100%] Built target kuka_msgs_pkg__rosidl_typesupport_c__pyext
+[11.694s] Invoked command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron /usr/bin/cmake --build /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg -- -j1 -l1
+[11.761s] Invoking command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron /usr/bin/cmake --install /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg
+[11.769s] -- Install configuration: ""
+[11.769s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/rosidl_interfaces/kuka_msgs_pkg
+[11.769s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/msg/WheelData.json
+[11.779s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg
+[11.779s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg
+[11.779s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail
+[11.779s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.h
+[11.780s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__struct.h
+[11.780s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__functions.h
+[11.780s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c
+[11.780s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__functions.c
+[11.781s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__description.c
+[11.781s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/wheel_data.h
+[11.781s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_generator_c__visibility_control.h
+[11.782s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/library_path.sh
+[11.782s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/library_path.dsv
+[11.795s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_c.so
+[11.797s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_c.so" to ""
+[11.798s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg
+[11.798s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg
+[11.799s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail
+[11.799s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_fastrtps_c.h
+[11.800s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.801s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_c.so
+[11.802s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_c.so" to ""
+[11.803s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg
+[11.803s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg
+[11.804s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.804s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail
+[11.805s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_introspection_c.h
+[11.805s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c
+[11.806s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_c.so
+[11.807s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_c.so" to ""
+[11.808s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_c.so
+[11.809s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_c.so" to ""
+[11.809s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg
+[11.809s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg
+[11.810s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail
+[11.810s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__struct.hpp
+[11.811s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__traits.hpp
+[11.811s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__builder.hpp
+[11.812s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/wheel_data.hpp
+[11.812s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg
+[11.812s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg
+[11.812s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.813s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail
+[11.813s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_fastrtps_cpp.hpp
+[11.813s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/dds_fastrtps
+[11.815s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.so
+[11.817s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.817s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg
+[11.817s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg
+[11.817s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail
+[11.818s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.cpp
+[11.818s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_introspection_cpp.hpp
+[11.819s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_cpp.so
+[11.820s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_cpp.so" to ""
+[11.821s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_cpp.so
+[11.822s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_cpp.so" to ""
+[11.822s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/pythonpath.sh
+[11.822s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/pythonpath.dsv
+[11.823s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info
+[11.823s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/PKG-INFO
+[11.823s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/top_level.txt
+[11.823s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
+[11.824s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
+[11.824s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg
+[11.824s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_introspection_c.c
+[11.825s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[11.825s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/libkuka_msgs_pkg__rosidl_generator_py.so
+[11.825s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_c.c
+[11.826s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[11.826s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg
+[11.826s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/_wheel_data_s.c
+[11.826s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/_wheel_data.py
+[11.827s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/__init__.py
+[11.827s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/__init__.py
+[11.827s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.828s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[11.868s] Listing '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg'...
+[11.869s] Compiling '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/__init__.py'...
+[11.869s] Listing '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg'...
+[11.869s] Compiling '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/__init__.py'...
+[11.869s] Compiling '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/_wheel_data.py'...
+[11.874s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[11.883s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[11.884s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[11.884s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[11.885s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[11.885s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[11.886s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_py.so
+[11.886s] -- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_py.so" to ""
+[11.887s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/msg/WheelData.idl
+[11.887s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/msg/WheelData.msg
+[11.890s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/package_run_dependencies/kuka_msgs_pkg
+[11.895s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/parent_prefix_path/kuka_msgs_pkg
+[11.896s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/ament_prefix_path.sh
+[11.896s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/ament_prefix_path.dsv
+[11.896s] -- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/path.sh
+[11.896s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/path.dsv
+[11.897s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.bash
+[11.897s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.sh
+[11.897s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.zsh
+[11.897s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.dsv
+[11.898s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/package.dsv
+[11.898s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/packages/kuka_msgs_pkg
+[11.899s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_cExport.cmake
+[11.899s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_cExport-noconfig.cmake
+[11.900s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+[11.900s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.900s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cExport.cmake
+[11.901s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.901s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cExport.cmake
+[11.901s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[11.902s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_cppExport.cmake
+[11.902s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.903s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.903s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[11.904s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.904s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cppExport.cmake
+[11.905s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[11.905s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_pyExport.cmake
+[11.906s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_pyExport-noconfig.cmake
+[11.906s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/rosidl_cmake-extras.cmake
+[11.906s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.906s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[11.907s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[11.907s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.907s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.908s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.908s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkgConfig.cmake
+[11.908s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkgConfig-version.cmake
+[11.908s] -- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/package.xml
+[11.915s] Invoked command in '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron /usr/bin/cmake --install /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg

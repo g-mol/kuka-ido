@@ -1,0 +1,23 @@
+[0.873s] Invoking command in '/home/geert/kuka-ido/ros2_ws/src/data_visualiser_pkg': AMENT_PREFIX_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg LD_LIBRARY_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/geert/kuka-ido/ros2_ws/build/data_visualiser_pkg/prefix_override:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_visualiser_pkg build --build-base /home/geert/kuka-ido/ros2_ws/build/data_visualiser_pkg/build install --record /home/geert/kuka-ido/ros2_ws/build/data_visualiser_pkg/install.log --single-version-externally-managed
+[1.200s] running egg_info
+[1.201s] writing ../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info/PKG-INFO
+[1.213s] writing dependency_links to ../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info/dependency_links.txt
+[1.213s] writing entry points to ../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info/entry_points.txt
+[1.213s] writing requirements to ../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info/requires.txt
+[1.214s] writing top-level names to ../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info/top_level.txt
+[1.216s] reading manifest file '../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info/SOURCES.txt'
+[1.219s] writing manifest file '../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info/SOURCES.txt'
+[1.219s] running build
+[1.219s] running build_py
+[1.220s] running install
+[1.220s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.220s]   warnings.warn(
+[1.220s] running install_lib
+[1.223s] running install_data
+[1.224s] running install_egg_info
+[1.225s] removing '/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages/data_visualiser_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.226s] Copying ../../build/data_visualiser_pkg/data_visualiser_pkg.egg-info to /home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages/data_visualiser_pkg-0.0.0-py3.10.egg-info
+[1.227s] running install_scripts
+[1.252s] Installing data_visualiser_node script to /home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/data_visualiser_pkg
+[1.252s] writing list of installed files to '/home/geert/kuka-ido/ros2_ws/build/data_visualiser_pkg/install.log'
+[1.276s] Invoked command in '/home/geert/kuka-ido/ros2_ws/src/data_visualiser_pkg' returned '0': AMENT_PREFIX_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg LD_LIBRARY_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/geert/kuka-ido/ros2_ws/build/data_visualiser_pkg/prefix_override:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_visualiser_pkg build --build-base /home/geert/kuka-ido/ros2_ws/build/data_visualiser_pkg/build install --record /home/geert/kuka-ido/ros2_ws/build/data_visualiser_pkg/install.log --single-version-externally-managed

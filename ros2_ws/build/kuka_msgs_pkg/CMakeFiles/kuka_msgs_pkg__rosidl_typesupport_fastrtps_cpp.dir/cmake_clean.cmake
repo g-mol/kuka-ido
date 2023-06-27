@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/single_wheel_data__type_support.cpp.o"
-  "CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/single_wheel_data__type_support.cpp.o.d"
+  "CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/wheel_data__type_support.cpp.o"
+  "CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/wheel_data__type_support.cpp.o.d"
   "libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.pdb"
   "libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.so"
-  "rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/single_wheel_data__type_support.cpp"
-  "rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/single_wheel_data__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/wheel_data__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_fastrtps_cpp.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

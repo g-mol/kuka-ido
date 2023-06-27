@@ -1,2 +1,2 @@
-msg/SingleWheelData.idl
-msg/SingleWheelData.msg
+msg/WheelData.idl
+msg/WheelData.msg

@@ -1,0 +1,494 @@
+[0.000000] (-) TimerEvent: {}
+[0.000769] (joystick_to_serial_pkg) JobQueued: {'identifier': 'joystick_to_serial_pkg', 'dependencies': OrderedDict()}
+[0.000806] (kuka_launch_pkg) JobQueued: {'identifier': 'kuka_launch_pkg', 'dependencies': OrderedDict()}
+[0.000834] (kuka_msgs_pkg) JobQueued: {'identifier': 'kuka_msgs_pkg', 'dependencies': OrderedDict()}
+[0.000874] (serial_communication_pkg) JobQueued: {'identifier': 'serial_communication_pkg', 'dependencies': OrderedDict([('kuka_msgs_pkg', '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg')])}
+[0.000906] (kuka_msgs_pkg) JobStarted: {'identifier': 'kuka_msgs_pkg'}
+[0.030425] (kuka_msgs_pkg) JobProgress: {'identifier': 'kuka_msgs_pkg', 'progress': 'cmake'}
+[0.030634] (kuka_msgs_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/geert/kuka-ido/ros2_ws/src/kuka_msgs_pkg', '-DCMAKE_INSTALL_PREFIX=/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg'], 'cwd': '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'geert'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/geert'), ('OLDPWD', '/home/geert'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('SYSTEMD_EXEC_PID', '1360'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/iron/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'geert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'geert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/iron/bin:/home/geert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/geert-VM:@/tmp/.ICE-unix/1344,unix/geert-VM:/tmp/.ICE-unix/1344'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f72833c_7d5a_43ed_8ee6_c0d6d11ce3c0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YCZB71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.275'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '25'), ('AMENT_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron')]), 'shell': False}
+[0.090837] (-) TimerEvent: {}
+[0.191137] (-) TimerEvent: {}
+[0.267666] (kuka_msgs_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.291299] (-) TimerEvent: {}
+[0.392218] (-) TimerEvent: {}
+[0.443979] (kuka_msgs_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.466516] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.492316] (-) TimerEvent: {}
+[0.592759] (-) TimerEvent: {}
+[0.594811] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.614573] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.616366] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.617609] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.627256] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.692879] (-) TimerEvent: {}
+[0.756377] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.777419] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.778043] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.779023] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.793021] (-) TimerEvent: {}
+[0.796450] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.2 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.893137] (-) TimerEvent: {}
+[0.993430] (-) TimerEvent: {}
+[1.091074] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[1.094311] (-) TimerEvent: {}
+[1.194598] (-) TimerEvent: {}
+[1.295224] (-) TimerEvent: {}
+[1.307040] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)\n'}
+[1.317989] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.395346] (-) TimerEvent: {}
+[1.443726] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.498105] (-) TimerEvent: {}
+[1.564837] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.0.0 (/opt/ros/iron/share/rosidl_adapter/cmake)\n'}
+[1.599708] (-) TimerEvent: {}
+[1.703990] (-) TimerEvent: {}
+[1.810157] (-) TimerEvent: {}
+[1.912595] (-) TimerEvent: {}
+[2.012725] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)\n'}
+[2.012865] (-) TimerEvent: {}
+[2.116723] (-) TimerEvent: {}
+[2.220406] (-) TimerEvent: {}
+[2.288488] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.321372] (-) TimerEvent: {}
+[2.421721] (-) TimerEvent: {}
+[2.530178] (-) TimerEvent: {}
+[2.619907] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.630300] (-) TimerEvent: {}
+[2.647603] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[2.650628] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)\n'}
+[2.700606] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[2.700947] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.701093] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.701229] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.730850] (-) TimerEvent: {}
+[2.736835] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.794218] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.1 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[2.828227] (kuka_msgs_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.830044] (kuka_msgs_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.830946] (-) TimerEvent: {}
+[2.833960] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.880963] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[2.884844] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg\n'}
+[2.893245] (kuka_msgs_pkg) CommandEnded: {'returncode': 0}
+[2.893689] (kuka_msgs_pkg) JobProgress: {'identifier': 'kuka_msgs_pkg', 'progress': 'build'}
+[2.893720] (kuka_msgs_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg', '--', '-j1', '-l1'], 'cwd': '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'geert'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/geert'), ('OLDPWD', '/home/geert'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('SYSTEMD_EXEC_PID', '1360'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/iron/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'geert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'geert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/iron/bin:/home/geert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/geert-VM:@/tmp/.ICE-unix/1344,unix/geert-VM:/tmp/.ICE-unix/1344'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f72833c_7d5a_43ed_8ee6_c0d6d11ce3c0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YCZB71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.275'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '25'), ('AMENT_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron')]), 'shell': False}
+[2.936380] (kuka_msgs_pkg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.936531] (-) TimerEvent: {}
+[3.040413] (-) TimerEvent: {}
+[3.150533] (-) TimerEvent: {}
+[3.250902] (-) TimerEvent: {}
+[3.334088] (kuka_msgs_pkg) StdoutLine: {'line': b'[  2%] Built target kuka_msgs_pkg__rosidl_generator_type_description\n'}
+[3.349910] (kuka_msgs_pkg) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.351344] (-) TimerEvent: {}
+[3.456178] (-) TimerEvent: {}
+[3.560660] (-) TimerEvent: {}
+[3.662373] (-) TimerEvent: {}
+[3.769069] (-) TimerEvent: {}
+[3.777187] (kuka_msgs_pkg) StdoutLine: {'line': b'[  5%] Built target kuka_msgs_pkg__cpp\n'}
+[3.785972] (kuka_msgs_pkg) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.869201] (-) TimerEvent: {}
+[3.970866] (-) TimerEvent: {}
+[4.083549] (-) TimerEvent: {}
+[4.190984] (-) TimerEvent: {}
+[4.293617] (-) TimerEvent: {}
+[4.319319] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_c.dir/rosidl_generator_c/kuka_msgs_pkg/msg/detail/wheel_data__description.c.o\x1b[0m\n'}
+[4.399194] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_c.dir/rosidl_generator_c/kuka_msgs_pkg/msg/detail/wheel_data__functions.c.o\x1b[0m\n'}
+[4.399349] (-) TimerEvent: {}
+[4.461245] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_c.dir/rosidl_generator_c/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c.o\x1b[0m\n'}
+[4.490712] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libkuka_msgs_pkg__rosidl_generator_c.so\x1b[0m\n'}
+[4.500154] (-) TimerEvent: {}
+[4.529355] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 20%] Built target kuka_msgs_pkg__rosidl_generator_c\n'}
+[4.550423] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.601319] (-) TimerEvent: {}
+[4.708887] (-) TimerEvent: {}
+[4.811279] (-) TimerEvent: {}
+[4.914228] (-) TimerEvent: {}
+[4.927363] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/kuka_msgs_pkg/msg/wheel_data__type_support.cpp.o\x1b[0m\n'}
+[5.014336] (-) TimerEvent: {}
+[5.130621] (-) TimerEvent: {}
+[5.231506] (-) TimerEvent: {}
+[5.341632] (-) TimerEvent: {}
+[5.442511] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.442663] (-) TimerEvent: {}
+[5.496564] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 29%] Built target kuka_msgs_pkg__rosidl_typesupport_cpp\n'}
+[5.505018] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.544997] (-) TimerEvent: {}
+[5.651706] (-) TimerEvent: {}
+[5.761956] (-) TimerEvent: {}
+[5.862438] (-) TimerEvent: {}
+[5.955663] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/kuka_msgs_pkg/msg/detail/wheel_data__type_support_c.cpp.o\x1b[0m\n'}
+[5.963621] (-) TimerEvent: {}
+[6.064031] (-) TimerEvent: {}
+[6.172018] (-) TimerEvent: {}
+[6.273495] (-) TimerEvent: {}
+[6.373820] (-) TimerEvent: {}
+[6.409135] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.475670] (-) TimerEvent: {}
+[6.480098] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 38%] Built target kuka_msgs_pkg__rosidl_typesupport_fastrtps_c\n'}
+[6.488043] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.580846] (-) TimerEvent: {}
+[6.683850] (-) TimerEvent: {}
+[6.787927] (-) TimerEvent: {}
+[6.892403] (-) TimerEvent: {}
+[6.949369] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c.o\x1b[0m\n'}
+[6.993339] (-) TimerEvent: {}
+[7.003814] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking C shared library libkuka_msgs_pkg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.046290] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 47%] Built target kuka_msgs_pkg__rosidl_typesupport_introspection_c\n'}
+[7.057438] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.100608] (-) TimerEvent: {}
+[7.202499] (-) TimerEvent: {}
+[7.308907] (-) TimerEvent: {}
+[7.412664] (-) TimerEvent: {}
+[7.440717] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/kuka_msgs_pkg/msg/wheel_data__type_support.cpp.o\x1b[0m\n'}
+[7.494451] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.512920] (-) TimerEvent: {}
+[7.539078] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 55%] Built target kuka_msgs_pkg__rosidl_typesupport_c\n'}
+[7.562649] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.622725] (-) TimerEvent: {}
+[7.723451] (-) TimerEvent: {}
+[7.825773] (-) TimerEvent: {}
+[7.933116] (-) TimerEvent: {}
+[7.996595] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kuka_msgs_pkg/msg/detail/dds_fastrtps/wheel_data__type_support.cpp.o\x1b[0m\n'}
+[8.037908] (-) TimerEvent: {}
+[8.151830] (-) TimerEvent: {}
+[8.253052] (-) TimerEvent: {}
+[8.355982] (-) TimerEvent: {}
+[8.459778] (-) TimerEvent: {}
+[8.563222] (-) TimerEvent: {}
+[8.647408] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.664677] (-) TimerEvent: {}
+[8.732579] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 64%] Built target kuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[8.741390] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.765681] (-) TimerEvent: {}
+[8.874746] (-) TimerEvent: {}
+[8.975082] (-) TimerEvent: {}
+[9.075437] (-) TimerEvent: {}
+[9.180212] (-) TimerEvent: {}
+[9.211474] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/kuka_msgs_pkg/msg/detail/wheel_data__type_support.cpp.o\x1b[0m\n'}
+[9.283630] (-) TimerEvent: {}
+[9.393636] (-) TimerEvent: {}
+[9.494217] (-) TimerEvent: {}
+[9.603753] (-) TimerEvent: {}
+[9.705708] (-) TimerEvent: {}
+[9.761039] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libkuka_msgs_pkg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.805916] (-) TimerEvent: {}
+[9.806138] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 73%] Built target kuka_msgs_pkg__rosidl_typesupport_introspection_cpp\n'}
+[9.823509] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 73%] Built target kuka_msgs_pkg\n'}
+[9.859191] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 73%] Built target ament_cmake_python_copy_kuka_msgs_pkg\n'}
+[9.909043] (-) TimerEvent: {}
+[10.013919] (-) TimerEvent: {}
+[10.116918] (-) TimerEvent: {}
+[10.223989] (-) TimerEvent: {}
+[10.237537] (kuka_msgs_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[10.238354] (kuka_msgs_pkg) StdoutLine: {'line': b'creating kuka_msgs_pkg.egg-info\n'}
+[10.238726] (kuka_msgs_pkg) StdoutLine: {'line': b'writing kuka_msgs_pkg.egg-info/PKG-INFO\n'}
+[10.239022] (kuka_msgs_pkg) StdoutLine: {'line': b'writing dependency_links to kuka_msgs_pkg.egg-info/dependency_links.txt\n'}
+[10.239333] (kuka_msgs_pkg) StdoutLine: {'line': b'writing top-level names to kuka_msgs_pkg.egg-info/top_level.txt\n'}
+[10.239711] (kuka_msgs_pkg) StdoutLine: {'line': b"writing manifest file 'kuka_msgs_pkg.egg-info/SOURCES.txt'\n"}
+[10.241991] (kuka_msgs_pkg) StdoutLine: {'line': b"reading manifest file 'kuka_msgs_pkg.egg-info/SOURCES.txt'\n"}
+[10.242873] (kuka_msgs_pkg) StdoutLine: {'line': b"writing manifest file 'kuka_msgs_pkg.egg-info/SOURCES.txt'\n"}
+[10.278065] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 73%] Built target ament_cmake_python_build_kuka_msgs_pkg_egg\n'}
+[10.295212] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[10.324145] (-) TimerEvent: {}
+[10.434154] (-) TimerEvent: {}
+[10.536643] (-) TimerEvent: {}
+[10.636931] (-) TimerEvent: {}
+[10.744304] (-) TimerEvent: {}
+[10.844563] (-) TimerEvent: {}
+[10.852605] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 76%] Built target kuka_msgs_pkg__py\n'}
+[10.869590] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_generator_py.dir/rosidl_generator_py/kuka_msgs_pkg/msg/_wheel_data_s.c.o\x1b[0m\n'}
+[10.946906] (-) TimerEvent: {}
+[11.047257] (-) TimerEvent: {}
+[11.081480] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/libkuka_msgs_pkg__rosidl_generator_py.so\x1b[0m\n'}
+[11.127334] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 82%] Built target kuka_msgs_pkg__rosidl_generator_py\n'}
+[11.143684] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[11.147363] (-) TimerEvent: {}
+[11.248047] (-) TimerEvent: {}
+[11.268199] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[11.314251] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 88%] Built target kuka_msgs_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[11.332713] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[11.348141] (-) TimerEvent: {}
+[11.448490] (-) TimerEvent: {}
+[11.452549] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[11.498133] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 94%] Built target kuka_msgs_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[11.518812] (kuka_msgs_pkg) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/kuka_msgs_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[11.548626] (-) TimerEvent: {}
+[11.638424] (kuka_msgs_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[11.648770] (-) TimerEvent: {}
+[11.671655] (kuka_msgs_pkg) StdoutLine: {'line': b'[100%] Built target kuka_msgs_pkg__rosidl_typesupport_c__pyext\n'}
+[11.694669] (kuka_msgs_pkg) CommandEnded: {'returncode': 0}
+[11.748911] (-) TimerEvent: {}
+[11.753976] (kuka_msgs_pkg) JobProgress: {'identifier': 'kuka_msgs_pkg', 'progress': 'install'}
+[11.761646] (kuka_msgs_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg'], 'cwd': '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'geert'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/geert'), ('OLDPWD', '/home/geert'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('SYSTEMD_EXEC_PID', '1360'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/iron/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'geert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'geert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/iron/bin:/home/geert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/geert-VM:@/tmp/.ICE-unix/1344,unix/geert-VM:/tmp/.ICE-unix/1344'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f72833c_7d5a_43ed_8ee6_c0d6d11ce3c0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YCZB71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.275'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '25'), ('AMENT_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron')]), 'shell': False}
+[11.769340] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.769617] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/rosidl_interfaces/kuka_msgs_pkg\n'}
+[11.769945] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/msg/WheelData.json\n'}
+[11.770234] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg\n'}
+[11.779823] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg\n'}
+[11.780125] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail\n'}
+[11.780304] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.h\n'}
+[11.780556] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__struct.h\n'}
+[11.780785] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__functions.h\n'}
+[11.781095] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c\n'}
+[11.781326] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__functions.c\n'}
+[11.781562] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__description.c\n'}
+[11.781790] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/wheel_data.h\n'}
+[11.782042] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[11.782375] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/library_path.sh\n'}
+[11.782570] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/library_path.dsv\n'}
+[11.795429] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_c.so\n'}
+[11.797742] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_c.so" to ""\n'}
+[11.798324] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg\n'}
+[11.798823] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg\n'}
+[11.799312] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail\n'}
+[11.799892] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_fastrtps_c.h\n'}
+[11.800601] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.801865] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[11.803110] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[11.803681] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg\n'}
+[11.804037] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg\n'}
+[11.804484] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.805101] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail\n'}
+[11.805544] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_introspection_c.h\n'}
+[11.806033] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.c\n'}
+[11.806983] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_c.so\n'}
+[11.808034] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[11.808704] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_c.so\n'}
+[11.809571] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_c.so" to ""\n'}
+[11.809934] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg\n'}
+[11.810266] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg\n'}
+[11.810568] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail\n'}
+[11.810860] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__struct.hpp\n'}
+[11.811353] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__traits.hpp\n'}
+[11.811817] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__builder.hpp\n'}
+[11.812321] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/wheel_data.hpp\n'}
+[11.812774] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg\n'}
+[11.813020] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg\n'}
+[11.813309] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.813664] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail\n'}
+[11.813917] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.814288] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/dds_fastrtps\n'}
+[11.815777] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.817470] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[11.817815] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg\n'}
+[11.818068] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg\n'}
+[11.818282] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail\n'}
+[11.818502] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__type_support.cpp\n'}
+[11.818820] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/include/kuka_msgs_pkg/kuka_msgs_pkg/msg/detail/wheel_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.820026] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[11.820673] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[11.821716] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_cpp.so\n'}
+[11.822535] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_typesupport_cpp.so" to ""\n'}
+[11.822780] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/pythonpath.sh\n'}
+[11.823141] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/pythonpath.dsv\n'}
+[11.823457] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info\n'}
+[11.823710] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[11.824062] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[11.824338] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[11.824609] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[11.825027] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg\n'}
+[11.825239] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[11.825528] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.825864] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/libkuka_msgs_pkg__rosidl_generator_py.so\n'}
+[11.826173] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_c.c\n'}
+[11.826460] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.826772] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg\n'}
+[11.826977] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/_wheel_data_s.c\n'}
+[11.827245] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/_wheel_data.py\n'}
+[11.827572] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/__init__.py\n'}
+[11.827857] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/__init__.py\n'}
+[11.828095] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/_kuka_msgs_pkg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[11.828347] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.849031] (-) TimerEvent: {}
+[11.869172] (kuka_msgs_pkg) StdoutLine: {'line': b"Listing '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg'...\n"}
+[11.869366] (kuka_msgs_pkg) StdoutLine: {'line': b"Compiling '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/__init__.py'...\n"}
+[11.869457] (kuka_msgs_pkg) StdoutLine: {'line': b"Listing '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg'...\n"}
+[11.869539] (kuka_msgs_pkg) StdoutLine: {'line': b"Compiling '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/__init__.py'...\n"}
+[11.869626] (kuka_msgs_pkg) StdoutLine: {'line': b"Compiling '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/msg/_wheel_data.py'...\n"}
+[11.874538] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.884113] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[11.884544] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.885158] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[11.885539] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.886014] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/kuka_msgs_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[11.886355] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_py.so\n'}
+[11.886838] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/libkuka_msgs_pkg__rosidl_generator_py.so" to ""\n'}
+[11.887643] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/msg/WheelData.idl\n'}
+[11.887911] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/msg/WheelData.msg\n'}
+[11.890973] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/package_run_dependencies/kuka_msgs_pkg\n'}
+[11.895656] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/parent_prefix_path/kuka_msgs_pkg\n'}
+[11.896368] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/ament_prefix_path.sh\n'}
+[11.896495] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/ament_prefix_path.dsv\n'}
+[11.896751] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/path.sh\n'}
+[11.896964] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/environment/path.dsv\n'}
+[11.897311] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.bash\n'}
+[11.897706] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.sh\n'}
+[11.898027] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.zsh\n'}
+[11.898289] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/local_setup.dsv\n'}
+[11.898662] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/package.dsv\n'}
+[11.898946] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/ament_index/resource_index/packages/kuka_msgs_pkg\n'}
+[11.899621] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_cExport.cmake\n'}
+[11.899904] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.900494] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[11.900733] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[11.901249] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.901496] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.901998] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cExport.cmake\n'}
+[11.902228] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.902767] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_cppExport.cmake\n'}
+[11.903279] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[11.903605] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[11.904183] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.904479] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.905115] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[11.905408] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.906066] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_pyExport.cmake\n'}
+[11.906358] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/export_kuka_msgs_pkg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[11.906638] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[11.906922] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.907240] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.907545] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.907902] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.908244] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.908528] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.908806] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkgConfig.cmake\n'}
+[11.909046] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/cmake/kuka_msgs_pkgConfig-version.cmake\n'}
+[11.909317] (kuka_msgs_pkg) StdoutLine: {'line': b'-- Installing: /home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/share/kuka_msgs_pkg/package.xml\n'}
+[11.915276] (kuka_msgs_pkg) CommandEnded: {'returncode': 0}
+[11.953629] (-) TimerEvent: {}
+[12.031679] (kuka_msgs_pkg) JobEnded: {'identifier': 'kuka_msgs_pkg', 'rc': 0}
+[12.032277] (joystick_to_serial_pkg) JobStarted: {'identifier': 'joystick_to_serial_pkg'}
+[12.056243] (-) TimerEvent: {}
+[12.162230] (-) TimerEvent: {}
+[12.265030] (-) TimerEvent: {}
+[12.375076] (-) TimerEvent: {}
+[12.480376] (-) TimerEvent: {}
+[12.585246] (-) TimerEvent: {}
+[12.686094] (-) TimerEvent: {}
+[12.795299] (-) TimerEvent: {}
+[12.905374] (-) TimerEvent: {}
+[12.958967] (joystick_to_serial_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/joystick_to_serial_pkg', 'build', '--build-base', '/home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/build', 'install', '--record', '/home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/geert/kuka-ido/ros2_ws/src/joystick_to_serial_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'geert', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/geert', 'OLDPWD': '/home/geert', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'SYSTEMD_EXEC_PID': '1360', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/iron/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'geert', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'geert', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/iron/bin:/home/geert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/geert-VM:@/tmp/.ICE-unix/1344,unix/geert-VM:/tmp/.ICE-unix/1344', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6f72833c_7d5a_43ed_8ee6_c0d6d11ce3c0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YCZB71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.275', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '25', 'AMENT_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/prefix_override:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg'}, 'shell': False}
+[13.008148] (-) TimerEvent: {}
+[13.108454] (-) TimerEvent: {}
+[13.215489] (-) TimerEvent: {}
+[13.316373] (-) TimerEvent: {}
+[13.343630] (joystick_to_serial_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[13.344561] (joystick_to_serial_pkg) StdoutLine: {'line': b'creating ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info\n'}
+[13.344931] (joystick_to_serial_pkg) StdoutLine: {'line': b'writing ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/PKG-INFO\n'}
+[13.345259] (joystick_to_serial_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/dependency_links.txt\n'}
+[13.355963] (joystick_to_serial_pkg) StdoutLine: {'line': b'writing entry points to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/entry_points.txt\n'}
+[13.356301] (joystick_to_serial_pkg) StdoutLine: {'line': b'writing requirements to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/requires.txt\n'}
+[13.356507] (joystick_to_serial_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/top_level.txt\n'}
+[13.356918] (joystick_to_serial_pkg) StdoutLine: {'line': b"writing manifest file '../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/SOURCES.txt'\n"}
+[13.358887] (joystick_to_serial_pkg) StdoutLine: {'line': b"reading manifest file '../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/SOURCES.txt'\n"}
+[13.360111] (joystick_to_serial_pkg) StdoutLine: {'line': b"writing manifest file '../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info/SOURCES.txt'\n"}
+[13.360462] (joystick_to_serial_pkg) StdoutLine: {'line': b'running build\n'}
+[13.362453] (joystick_to_serial_pkg) StdoutLine: {'line': b'running build_py\n'}
+[13.362773] (joystick_to_serial_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/build\n'}
+[13.362961] (joystick_to_serial_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/build/lib\n'}
+[13.363179] (joystick_to_serial_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg\n'}
+[13.363377] (joystick_to_serial_pkg) StdoutLine: {'line': b'copying joystick_to_serial_pkg/joystick_to_serial_node.py -> /home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg\n'}
+[13.377037] (joystick_to_serial_pkg) StdoutLine: {'line': b'copying joystick_to_serial_pkg/__init__.py -> /home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/build/lib/joystick_to_serial_pkg\n'}
+[13.377354] (joystick_to_serial_pkg) StdoutLine: {'line': b'running install\n'}
+[13.377626] (joystick_to_serial_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[13.377772] (joystick_to_serial_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[13.378276] (joystick_to_serial_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[13.379810] (joystick_to_serial_pkg) StdoutLine: {'line': b'running install_data\n'}
+[13.380576] (joystick_to_serial_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.382218] (joystick_to_serial_pkg) StdoutLine: {'line': b"removing '/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[13.382664] (joystick_to_serial_pkg) StdoutLine: {'line': b'Copying ../../build/joystick_to_serial_pkg/joystick_to_serial_pkg.egg-info to /home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages/joystick_to_serial_pkg-0.0.0-py3.10.egg-info\n'}
+[13.383573] (joystick_to_serial_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[13.409796] (joystick_to_serial_pkg) StdoutLine: {'line': b'Installing joystick_to_serial_node script to /home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/joystick_to_serial_pkg\n'}
+[13.410427] (joystick_to_serial_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/geert/kuka-ido/ros2_ws/build/joystick_to_serial_pkg/install.log'\n"}
+[13.425475] (-) TimerEvent: {}
+[13.435687] (joystick_to_serial_pkg) CommandEnded: {'returncode': 0}
+[13.447578] (joystick_to_serial_pkg) JobEnded: {'identifier': 'joystick_to_serial_pkg', 'rc': 0}
+[13.448250] (kuka_launch_pkg) JobStarted: {'identifier': 'kuka_launch_pkg'}
+[13.525654] (-) TimerEvent: {}
+[13.628030] (-) TimerEvent: {}
+[13.729253] (-) TimerEvent: {}
+[13.835841] (-) TimerEvent: {}
+[13.948138] (-) TimerEvent: {}
+[14.055940] (-) TimerEvent: {}
+[14.157277] (-) TimerEvent: {}
+[14.266077] (-) TimerEvent: {}
+[14.376197] (-) TimerEvent: {}
+[14.384913] (kuka_launch_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/kuka_launch_pkg', 'build', '--build-base', '/home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/build', 'install', '--record', '/home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/geert/kuka-ido/ros2_ws/src/kuka_launch_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'geert', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/geert', 'OLDPWD': '/home/geert', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'SYSTEMD_EXEC_PID': '1360', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/iron/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'geert', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'geert', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/iron/bin:/home/geert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/geert-VM:@/tmp/.ICE-unix/1344,unix/geert-VM:/tmp/.ICE-unix/1344', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6f72833c_7d5a_43ed_8ee6_c0d6d11ce3c0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YCZB71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.275', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '25', 'AMENT_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/prefix_override:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg'}, 'shell': False}
+[14.486154] (-) TimerEvent: {}
+[14.586931] (-) TimerEvent: {}
+[14.689174] (-) TimerEvent: {}
+[14.794814] (-) TimerEvent: {}
+[14.795209] (kuka_launch_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[14.796306] (kuka_launch_pkg) StdoutLine: {'line': b'creating ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info\n'}
+[14.796723] (kuka_launch_pkg) StdoutLine: {'line': b'writing ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/PKG-INFO\n'}
+[14.797061] (kuka_launch_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/dependency_links.txt\n'}
+[14.797313] (kuka_launch_pkg) StdoutLine: {'line': b'writing entry points to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/entry_points.txt\n'}
+[14.797551] (kuka_launch_pkg) StdoutLine: {'line': b'writing requirements to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/requires.txt\n'}
+[14.797954] (kuka_launch_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/top_level.txt\n'}
+[14.798468] (kuka_launch_pkg) StdoutLine: {'line': b"writing manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'\n"}
+[14.800380] (kuka_launch_pkg) StdoutLine: {'line': b"reading manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'\n"}
+[14.801583] (kuka_launch_pkg) StdoutLine: {'line': b"writing manifest file '../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info/SOURCES.txt'\n"}
+[14.801822] (kuka_launch_pkg) StdoutLine: {'line': b'running build\n'}
+[14.802061] (kuka_launch_pkg) StdoutLine: {'line': b'running build_py\n'}
+[14.802342] (kuka_launch_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/build\n'}
+[14.802517] (kuka_launch_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/build/lib\n'}
+[14.802696] (kuka_launch_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/build/lib/kuka_launch_pkg\n'}
+[14.802907] (kuka_launch_pkg) StdoutLine: {'line': b'copying kuka_launch_pkg/__init__.py -> /home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/build/lib/kuka_launch_pkg\n'}
+[14.803354] (kuka_launch_pkg) StdoutLine: {'line': b'running install\n'}
+[14.803614] (kuka_launch_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[14.803752] (kuka_launch_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[14.804253] (kuka_launch_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[14.805598] (kuka_launch_pkg) StdoutLine: {'line': b'running install_data\n'}
+[14.807049] (kuka_launch_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.808656] (kuka_launch_pkg) StdoutLine: {'line': b"removing '/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[14.809119] (kuka_launch_pkg) StdoutLine: {'line': b'Copying ../../build/kuka_launch_pkg/kuka_launch_pkg.egg-info to /home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages/kuka_launch_pkg-0.0.0-py3.10.egg-info\n'}
+[14.810013] (kuka_launch_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[14.849563] (kuka_launch_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/geert/kuka-ido/ros2_ws/build/kuka_launch_pkg/install.log'\n"}
+[14.875214] (kuka_launch_pkg) CommandEnded: {'returncode': 0}
+[14.884504] (kuka_launch_pkg) JobEnded: {'identifier': 'kuka_launch_pkg', 'rc': 0}
+[14.885133] (serial_communication_pkg) JobStarted: {'identifier': 'serial_communication_pkg'}
+[14.906481] (-) TimerEvent: {}
+[15.008454] (-) TimerEvent: {}
+[15.116467] (-) TimerEvent: {}
+[15.226538] (-) TimerEvent: {}
+[15.328725] (-) TimerEvent: {}
+[15.435531] (-) TimerEvent: {}
+[15.538966] (-) TimerEvent: {}
+[15.643654] (-) TimerEvent: {}
+[15.746785] (-) TimerEvent: {}
+[15.816515] (serial_communication_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/serial_communication_pkg', 'build', '--build-base', '/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build', 'install', '--record', '/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/geert/kuka-ido/ros2_ws/src/serial_communication_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'geert', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/geert', 'OLDPWD': '/home/geert', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'SYSTEMD_EXEC_PID': '1360', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/iron/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'geert', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'geert', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/iron/bin:/home/geert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/geert-VM:@/tmp/.ICE-unix/1344,unix/geert-VM:/tmp/.ICE-unix/1344', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6f72833c_7d5a_43ed_8ee6_c0d6d11ce3c0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YCZB71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.275', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '25', 'AMENT_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/prefix_override:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/data_visualiser_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_launch_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/joystick_to_serial_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg'}, 'shell': False}
+[15.856758] (-) TimerEvent: {}
+[15.957540] (-) TimerEvent: {}
+[16.063179] (-) TimerEvent: {}
+[16.166969] (-) TimerEvent: {}
+[16.190401] (serial_communication_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[16.191256] (serial_communication_pkg) StdoutLine: {'line': b'creating ../../build/serial_communication_pkg/serial_communication_pkg.egg-info\n'}
+[16.191624] (serial_communication_pkg) StdoutLine: {'line': b'writing ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/PKG-INFO\n'}
+[16.191946] (serial_communication_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/dependency_links.txt\n'}
+[16.192212] (serial_communication_pkg) StdoutLine: {'line': b'writing entry points to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/entry_points.txt\n'}
+[16.192441] (serial_communication_pkg) StdoutLine: {'line': b'writing requirements to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/requires.txt\n'}
+[16.192637] (serial_communication_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/top_level.txt\n'}
+[16.193016] (serial_communication_pkg) StdoutLine: {'line': b"writing manifest file '../../build/serial_communication_pkg/serial_communication_pkg.egg-info/SOURCES.txt'\n"}
+[16.194914] (serial_communication_pkg) StdoutLine: {'line': b"reading manifest file '../../build/serial_communication_pkg/serial_communication_pkg.egg-info/SOURCES.txt'\n"}
+[16.196159] (serial_communication_pkg) StdoutLine: {'line': b"writing manifest file '../../build/serial_communication_pkg/serial_communication_pkg.egg-info/SOURCES.txt'\n"}
+[16.196394] (serial_communication_pkg) StdoutLine: {'line': b'running build\n'}
+[16.196648] (serial_communication_pkg) StdoutLine: {'line': b'running build_py\n'}
+[16.197011] (serial_communication_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build\n'}
+[16.197192] (serial_communication_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build/lib\n'}
+[16.197365] (serial_communication_pkg) StdoutLine: {'line': b'creating /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build/lib/serial_communication_pkg\n'}
+[16.197562] (serial_communication_pkg) StdoutLine: {'line': b'copying serial_communication_pkg/serial_communication_node.py -> /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build/lib/serial_communication_pkg\n'}
+[16.197819] (serial_communication_pkg) StdoutLine: {'line': b'copying serial_communication_pkg/__init__.py -> /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build/lib/serial_communication_pkg\n'}
+[16.198203] (serial_communication_pkg) StdoutLine: {'line': b'running install\n'}
+[16.198445] (serial_communication_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[16.198584] (serial_communication_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[16.199055] (serial_communication_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[16.200475] (serial_communication_pkg) StdoutLine: {'line': b'running install_data\n'}
+[16.201219] (serial_communication_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.202924] (serial_communication_pkg) StdoutLine: {'line': b"removing '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[16.203362] (serial_communication_pkg) StdoutLine: {'line': b'Copying ../../build/serial_communication_pkg/serial_communication_pkg.egg-info to /home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg-0.0.0-py3.10.egg-info\n'}
+[16.216095] (serial_communication_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[16.244678] (serial_communication_pkg) StdoutLine: {'line': b'Installing serial_communication_node script to /home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/serial_communication_pkg\n'}
+[16.245283] (serial_communication_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/install.log'\n"}
+[16.267270] (-) TimerEvent: {}
+[16.272761] (serial_communication_pkg) CommandEnded: {'returncode': 0}
+[16.283228] (serial_communication_pkg) JobEnded: {'identifier': 'serial_communication_pkg', 'rc': 0}
+[16.284065] (-) EventReactorShutdown: {}
