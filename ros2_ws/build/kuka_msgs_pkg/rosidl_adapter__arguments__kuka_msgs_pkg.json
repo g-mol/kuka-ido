@@ -1,6 +1,6 @@
 {
   "package_name": "kuka_msgs_pkg",
   "non_idl_tuples": [
-    "/home/geert/ros2_ws_git/src/kuka_msgs_pkg:msg/SingleWheelData.msg"
+    "/home/geert/kuka-ido/ros2_ws/src/kuka_msgs_pkg:msg/WheelData.msg"
   ]
 }

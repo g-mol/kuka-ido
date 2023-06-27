@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DROSIDL_TYPESUPPORT_INTROSPECTION_C_BUILDING_DLL_kuka_msgs_pkg -DROS_PACKAGE_NAME=\"kuka_msgs_pkg\"
 
-C_INCLUDES = -I/home/geert/ros2_ws_git/build/kuka_msgs_pkg/rosidl_typesupport_introspection_c -I/home/geert/ros2_ws_git/build/kuka_msgs_pkg/rosidl_generator_c -isystem /opt/ros/iron/include/rosidl_runtime_c -isystem /opt/ros/iron/include/rcutils -isystem /opt/ros/iron/include/rosidl_typesupport_interface -isystem /opt/ros/iron/include/rosidl_typesupport_introspection_c
+C_INCLUDES = -I/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg/rosidl_typesupport_introspection_c -I/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg/rosidl_generator_c -isystem /opt/ros/iron/include/rosidl_runtime_c -isystem /opt/ros/iron/include/rcutils -isystem /opt/ros/iron/include/rosidl_typesupport_interface -isystem /opt/ros/iron/include/rosidl_typesupport_introspection_c
 
 C_FLAGS = -fPIC -Wall -std=gnu11
 

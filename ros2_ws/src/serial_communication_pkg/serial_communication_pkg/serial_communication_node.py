@@ -4,7 +4,7 @@ from std_msgs.msg import String
 import serial
 import time
 import threading
-from kuka_msgs_pkg.msg import SingleWheelData
+from kuka_msgs_pkg.msg import WheelData
 
 # create a serial port object
 serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
@@ -14,7 +14,10 @@ class SerialCommunicationNode(Node):
         super().__init__("serial_communication_node")
         self.serial_subscription = self.create_subscription(
             String, "joystick_serial", self.serial_callback, 10)
-        self.wheel_data_publisher = self.create_publisher(SingleWheelData, 'single_wheel_data', 10)
+        
+        self.left_wheel_pub = self.create_publisher(WheelData, '/WheelData/left', 10)
+        self.right_wheel_pub = self.create_publisher(WheelData, '/WheelData/right', 10)
+        
         self.data_request_timer = self.create_timer(0.1, self.send_data_request) # 10Hz rate
         self.waiting_for_data = False  # Added state variable
         self.start_data_listener()  # Start the data listener thread
@@ -35,14 +38,20 @@ class SerialCommunicationNode(Node):
             while True:
                 if serial_port.inWaiting() > 0:
                     data = serial_port.readline().decode().strip()  # Read data
-                    print(f"Received data: {data}")  # Print data
+                    # print(f"Received data: {data}")  # Print data
                     self.waiting_for_data = False  # Reset waiting state
                     
-                    vel_L, pos_L, vel_R, pos_R = map(float, data.split(','))
-                    wheel_data = SingleWheelData()  # Create a new SingleWheelData message
-                    wheel_data.position = pos_L  # Set the position
+                    vel_L, vel_R, pos_L, pos_R = map(float, data.split(','))
                     
-                    self.wheel_data_publisher.publish(wheel_data)
+                    left_wheel_data = WheelData()
+                    left_wheel_data.position = pos_L
+                    left_wheel_data.velocity = vel_L
+                    self.left_wheel_pub.publish(left_wheel_data)
+                    
+                    right_wheel_data = WheelData()
+                    right_wheel_data.position = pos_R
+                    right_wheel_data.velocity = vel_R
+                    self.right_wheel_pub.publish(right_wheel_data)
 
         listener_thread = threading.Thread(target=data_listener)
         listener_thread.start()

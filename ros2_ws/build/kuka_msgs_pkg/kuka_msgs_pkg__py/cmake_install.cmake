@@ -1,8 +1,8 @@
-# Install script for directory: /home/geert/ros2_ws_git/build/kuka_msgs_pkg/kuka_msgs_pkg__py
+# Install script for directory: /home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg/kuka_msgs_pkg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/geert/ros2_ws_git/install/kuka_msgs_pkg")
+  set(CMAKE_INSTALL_PREFIX "/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

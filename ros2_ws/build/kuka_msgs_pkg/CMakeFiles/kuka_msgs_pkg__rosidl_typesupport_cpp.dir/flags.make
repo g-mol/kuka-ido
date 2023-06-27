@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROSIDL_TYPESUPPORT_CPP_BUILDING_DLL -DROS_PACKAGE_NAME=\"kuka_msgs_pkg\"
 
-CXX_INCLUDES = -I/home/geert/ros2_ws_git/build/kuka_msgs_pkg/rosidl_generator_c -I/home/geert/ros2_ws_git/build/kuka_msgs_pkg/rosidl_generator_cpp -isystem /opt/ros/iron/include/rosidl_runtime_c -isystem /opt/ros/iron/include/rcutils -isystem /opt/ros/iron/include/rosidl_typesupport_interface -isystem /opt/ros/iron/include/rosidl_runtime_cpp -isystem /opt/ros/iron/include/rosidl_typesupport_cpp -isystem /opt/ros/iron/include/rosidl_typesupport_c
+CXX_INCLUDES = -I/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg/rosidl_generator_c -I/home/geert/kuka-ido/ros2_ws/build/kuka_msgs_pkg/rosidl_generator_cpp -isystem /opt/ros/iron/include/rosidl_runtime_c -isystem /opt/ros/iron/include/rcutils -isystem /opt/ros/iron/include/rosidl_typesupport_interface -isystem /opt/ros/iron/include/rosidl_runtime_cpp -isystem /opt/ros/iron/include/rosidl_typesupport_cpp -isystem /opt/ros/iron/include/rosidl_typesupport_c
 
 CXX_FLAGS = -fPIC -Wall
 
