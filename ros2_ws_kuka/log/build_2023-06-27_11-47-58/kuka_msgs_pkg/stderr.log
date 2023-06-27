@@ -1,1 +1,0 @@
-[0mCMake Error: The current CMakeCache.txt directory /home/geert/kuka-ido/ros2_ws_kuka/build/kuka_msgs_pkg/CMakeCache.txt is different than the directory /home/geert/ros2_ws_git/build/kuka_msgs_pkg where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m

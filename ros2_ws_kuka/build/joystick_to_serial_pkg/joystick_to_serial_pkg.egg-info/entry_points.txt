@@ -1,3 +1,0 @@
-[console_scripts]
-joystick_to_serial_node = joystick_to_serial_pkg.joystick_to_serial_node:main
-

@@ -1,8 +1,0 @@
-setup.py
-kuka_msgs_pkg/__init__.py
-kuka_msgs_pkg.egg-info/PKG-INFO
-kuka_msgs_pkg.egg-info/SOURCES.txt
-kuka_msgs_pkg.egg-info/dependency_links.txt
-kuka_msgs_pkg.egg-info/top_level.txt
-kuka_msgs_pkg/msg/__init__.py
-kuka_msgs_pkg/msg/_single_wheel_data.py

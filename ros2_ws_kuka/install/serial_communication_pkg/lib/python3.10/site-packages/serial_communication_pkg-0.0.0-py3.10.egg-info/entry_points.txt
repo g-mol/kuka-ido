@@ -1,3 +1,0 @@
-[console_scripts]
-serial_communication_node = serial_communication_pkg.serial_communication_node:main
-

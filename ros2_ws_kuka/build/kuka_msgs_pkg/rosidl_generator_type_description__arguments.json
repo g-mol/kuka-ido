@@ -1,7 +1,0 @@
-{
-  "package_name": "kuka_msgs_pkg",
-  "output_dir": "/home/geert/ros2_ws_git/build/kuka_msgs_pkg/rosidl_generator_type_description/kuka_msgs_pkg",
-  "idl_tuples": [
-    "/home/geert/ros2_ws_git/build/kuka_msgs_pkg/rosidl_adapter/kuka_msgs_pkg:msg/SingleWheelData.idl"
-  ]
-}
