@@ -1,0 +1,35 @@
+[0.937s] Invoking command in '/home/geert/ros2_ws_git/src/kuka_msgs_pkg': PYTHONPATH=/home/geert/ros2_ws_git/build/kuka_msgs_pkg/prefix_override:/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kuka_msgs_pkg build --build-base /home/geert/ros2_ws_git/build/kuka_msgs_pkg/build install --record /home/geert/ros2_ws_git/build/kuka_msgs_pkg/install.log --single-version-externally-managed
+[1.310s] running egg_info
+[1.311s] creating ../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info
+[1.311s] writing ../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/PKG-INFO
+[1.312s] writing dependency_links to ../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/dependency_links.txt
+[1.312s] writing entry points to ../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/entry_points.txt
+[1.312s] writing requirements to ../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/requires.txt
+[1.313s] writing top-level names to ../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/top_level.txt
+[1.313s] writing manifest file '../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/SOURCES.txt'
+[1.315s] reading manifest file '../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/SOURCES.txt'
+[1.316s] writing manifest file '../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info/SOURCES.txt'
+[1.317s] running build
+[1.317s] running build_py
+[1.317s] creating /home/geert/ros2_ws_git/build/kuka_msgs_pkg/build
+[1.317s] creating /home/geert/ros2_ws_git/build/kuka_msgs_pkg/build/lib
+[1.318s] creating /home/geert/ros2_ws_git/build/kuka_msgs_pkg/build/lib/kuka_msgs_pkg
+[1.318s] copying kuka_msgs_pkg/__init__.py -> /home/geert/ros2_ws_git/build/kuka_msgs_pkg/build/lib/kuka_msgs_pkg
+[1.318s] running install
+[1.319s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.319s]   warnings.warn(
+[1.319s] running install_lib
+[1.320s] creating /home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg
+[1.321s] copying /home/geert/ros2_ws_git/build/kuka_msgs_pkg/build/lib/kuka_msgs_pkg/__init__.py -> /home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg
+[1.321s] byte-compiling /home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg/__init__.py to __init__.cpython-310.pyc
+[1.322s] running install_data
+[1.323s] creating /home/geert/ros2_ws_git/install/kuka_msgs_pkg/share/ament_index
+[1.323s] creating /home/geert/ros2_ws_git/install/kuka_msgs_pkg/share/ament_index/resource_index
+[1.323s] creating /home/geert/ros2_ws_git/install/kuka_msgs_pkg/share/ament_index/resource_index/packages
+[1.323s] copying resource/kuka_msgs_pkg -> /home/geert/ros2_ws_git/install/kuka_msgs_pkg/share/ament_index/resource_index/packages
+[1.324s] copying package.xml -> /home/geert/ros2_ws_git/install/kuka_msgs_pkg/share/kuka_msgs_pkg
+[1.324s] running install_egg_info
+[1.326s] Copying ../../build/kuka_msgs_pkg/kuka_msgs_pkg.egg-info to /home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages/kuka_msgs_pkg-0.0.0-py3.10.egg-info
+[1.327s] running install_scripts
+[1.359s] writing list of installed files to '/home/geert/ros2_ws_git/build/kuka_msgs_pkg/install.log'
+[1.387s] Invoked command in '/home/geert/ros2_ws_git/src/kuka_msgs_pkg' returned '0': PYTHONPATH=/home/geert/ros2_ws_git/build/kuka_msgs_pkg/prefix_override:/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kuka_msgs_pkg build --build-base /home/geert/ros2_ws_git/build/kuka_msgs_pkg/build install --record /home/geert/ros2_ws_git/build/kuka_msgs_pkg/install.log --single-version-externally-managed

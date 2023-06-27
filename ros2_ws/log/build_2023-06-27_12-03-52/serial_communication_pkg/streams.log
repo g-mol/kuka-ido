@@ -1,0 +1,23 @@
+[1.069s] Invoking command in '/home/geert/kuka-ido/ros2_ws/src/serial_communication_pkg': AMENT_PREFIX_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/prefix_override:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/serial_communication_pkg build --build-base /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build install --record /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/install.log --single-version-externally-managed
+[1.508s] running egg_info
+[1.513s] writing ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/PKG-INFO
+[1.515s] writing dependency_links to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/dependency_links.txt
+[1.516s] writing entry points to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/entry_points.txt
+[1.516s] writing requirements to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/requires.txt
+[1.516s] writing top-level names to ../../build/serial_communication_pkg/serial_communication_pkg.egg-info/top_level.txt
+[1.519s] reading manifest file '../../build/serial_communication_pkg/serial_communication_pkg.egg-info/SOURCES.txt'
+[1.523s] writing manifest file '../../build/serial_communication_pkg/serial_communication_pkg.egg-info/SOURCES.txt'
+[1.524s] running build
+[1.524s] running build_py
+[1.525s] running install
+[1.525s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.525s]   warnings.warn(
+[1.530s] running install_lib
+[1.532s] running install_data
+[1.533s] running install_egg_info
+[1.538s] removing '/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.540s] Copying ../../build/serial_communication_pkg/serial_communication_pkg.egg-info to /home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages/serial_communication_pkg-0.0.0-py3.10.egg-info
+[1.541s] running install_scripts
+[1.618s] Installing serial_communication_node script to /home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/serial_communication_pkg
+[1.618s] writing list of installed files to '/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/install.log'
+[1.676s] Invoked command in '/home/geert/kuka-ido/ros2_ws/src/serial_communication_pkg' returned '0': AMENT_PREFIX_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/prefix_override:/home/geert/kuka-ido/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/geert/ros2_ws_git/install/kuka_msgs_pkg/lib/python3.10/site-packages:/home/geert/kuka-ido/ros2_ws/install/kuka_msgs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/serial_communication_pkg build --build-base /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/build install --record /home/geert/kuka-ido/ros2_ws/build/serial_communication_pkg/install.log --single-version-externally-managed
