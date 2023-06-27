@@ -1,12 +1,9 @@
-#include "libraries/DynamixelReader/src/DynamixelReader.h"
+#include "DynamixelReader.h"
 #include <util/atomic.h>  // For the ATOMIC_BLOCK macro
 #include <SimpleFOC.h>
 
-// #define DEBUG (1)  // for serial debug
-
-#define FASTTHRESHOLDRAD 3
-
-#define DEADZONE 10  // nunchuck center deadzone
+#define FASTTHRESHOLDRAD 3  // maximum rads/s for the wheels
+#define DEADZONE 10         // nunchuck center deadzone
 
 #define leftDIR 11
 #define leftPWMH 10
@@ -23,14 +20,16 @@
 #define REMOTE_BUFFER 64
 unsigned char Data[REMOTE_BUFFER];
 unsigned long remoteTimeout, loopTime;
-int validMessage;
-
 #define RS485_SR 12
 
+int validMessage;  // Variable to check if remote is still connected
+int usingRadio;    // Variable to check if radio remote is being used
+int usingPS3;      // Variable to check if PS3 remote is being used
 
 // Wheel positioning
-long prevT = 0;
 
+// Left wheel
+double pos_R = 0;
 volatile double posTicks_L = 0;
 long posPrev_L = 0;
 
@@ -39,6 +38,8 @@ float target_L = 0;
 float targetFilt_L = 0;
 float integral_L = 0;
 
+// Right wheel
+double pos_L = 0;
 volatile double posTicks_R = 0;
 long posPrev_R = 0;
 
@@ -47,19 +48,15 @@ float target_R = 0;
 float targetFilt_R = 0;
 float integral_R = 0;
 
-double pos_L = 0;
-double pos_R = 0;
+
+long prevT = 0;  // Time variable
 
 LowPassFilter filterRemote_L = LowPassFilter(0.05);
 LowPassFilter filterRemote_R = LowPassFilter(0.05);
 
 void setup() {
-  Serial.begin(115200);
-
-#ifdef DEBUG
-  Serial.begin(115200);
-#endif
-  Serial1.begin(9600);
+  Serial.begin(115200);  // Serial communication with computer
+  Serial1.begin(9600);   // Serial communication with radio chip
 
   // Setup pins for left motor
   pinMode(leftPWMH, OUTPUT);
@@ -80,46 +77,36 @@ void setup() {
   TCCR3B = 1;  // to set a higher PWM frequency
 }
 
-unsigned long looptime = 0;
+unsigned long looptimeRemote = 0;
 unsigned long looptimePID = 0;
-unsigned long looptimePrint = 0;
 
 void loop() {
-  // DynamixelPoll();
+  DynamixelPoll();
   ROSJoystickData();
 
-  //   if (millis() >= looptime + 10) {  // 100Hz
-  //     if (remoteTimeout < 100) remoteTimeout++;
-  //     looptime = millis();
+  if (millis() >= looptimeRemote + 10) {  // 100Hz
+    if (remoteTimeout < 100) remoteTimeout++;
+    looptimeRemote = millis();
 
-  //     if (remoteTimeout > 50 && validMessage > 0) {  // remote has timed out
-  //                                                    // STOP THE VEHICLE !!
-  // #ifdef DEBUG
-  //       Serial.println("no signal");
-  // #endif
-  //       validMessage = 0;
-  //       target_L = 0;
-  //       target_R = 0;
-  //     }
-  //   }
+    if (remoteTimeout > 50 && validMessage > 0) {
+      // remote has timed out
+      // STOP THE VEHICLE !!
+
+      validMessage = 0;
+      target_L = 0;
+      target_R = 0;
+    }
+  }
 
 
   if (millis() >= looptimePID + 1) {  // 1000 Hz
     looptimePID = millis();
     controlPID();
   }
-
-
-  // Serial.println(testTicksLast);
-  // if (millis() >= looptimePrint + 100) {  // 1000 Hz
-  // looptimePrint = millis();
-  // }
 }
 
 void controlPID() {
-  // double pos_L;
-  // double pos_R;
-
+  // Atomic block makes sure setting the position variable is not interrupted by the encoder interrupts
   ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
     pos_L = posTicks_L;
     pos_R = posTicks_R;
@@ -136,14 +123,12 @@ void controlPID() {
 
   prevT = currT;
 
+  // Wheel variables, calculated by Cliff ten Barge
   rads_L = velocity_L * 0.000427;
   rads_R = velocity_R * 0.000427;
 
-
   float kp = 57.3;
   float ki = 30;
-  // float kp = 50;  // proportional
-  // float ki = 0;  // integral
 
   float error_L = targetFilt_L - rads_L;
   float error_R = targetFilt_R - rads_R;
@@ -157,7 +142,7 @@ void controlPID() {
   int power_L = (int)fabs(control_L);
   int power_R = (int)fabs(control_R);
 
-  if (targetFilt_L < 0.1 && targetFilt_L > -0.1 && targetFilt_R < 0.1 && targetFilt_R > -0.1) {
+  if (targetFilt_L < 0.1 && targetFilt_L > -0.1 && targetFilt_R < 0.1 && targetFilt_R > -0.1) {  // Prevents small shakes when coming to a halt
     power_L = 0;
     power_R = 0;
   }
@@ -166,7 +151,7 @@ void controlPID() {
   setRightMotorPID(readDir(control_R), power_R);
 }
 
-
+// Function for mapping floats properly
 float mapfloat(long x, long in_min, long in_max, long out_min, long out_max) {
   return (float)(x - in_min) * (out_max - out_min) / (float)(in_max - in_min) + out_min;
 }
@@ -177,11 +162,12 @@ void ROSJoystickData() {
     String received = Serial.readStringUntil('\n');
     received.trim();
 
-    // Check if we have received the ready for data command.
+    // Check if we have received the ready for data command and send the wheel data accordingly
     if (received == "RDY_DATA") {
       String wheelData = String(rads_L) + "," + String(rads_R) + "," + String(pos_L) + "," + String(pos_R);
       Serial.println(wheelData);
-    } else {
+    } else if (usingRadio == 0) {
+      // Else the data is a setpoint command
       int separator = received.indexOf(',');
 
       String xStr = received.substring(0, separator);
@@ -192,30 +178,29 @@ void ROSJoystickData() {
 
       if (xSetpoint >= 0 && xSetpoint <= 255 && ySetpoint >= 0 && ySetpoint <= 255) {  // sanity check
         if (ySetpoint < (127 - DEADZONE) || ySetpoint > (127 + DEADZONE) || xSetpoint < (127 - DEADZONE) || xSetpoint > (127 + DEADZONE)) {
+          usingPS3 = 1;
 
           target_L = mapfloat(constrain((ySetpoint - 127) + (xSetpoint - 127), -127, 127), -127, 127, FASTTHRESHOLDRAD, -FASTTHRESHOLDRAD);
           target_R = mapfloat(constrain((xSetpoint - 127) - (ySetpoint - 127), -127, 127), -127, 127, -FASTTHRESHOLDRAD, FASTTHRESHOLDRAD);
 
         } else {
+          usingPS3 = 0;
+
           target_L = 0;
           target_R = 0;
         }
       }
+      // Set filtered target speed, this makes sure the robot can not change its setpoint too fast and prevents it from falling over in extreme situations
+      targetFilt_L = filterRemote_L(target_L);
+      targetFilt_R = filterRemote_R(target_R);
+    } else {
+      usingPS3 = 0;
     }
-    // Serial.print("X: ");
-    // Serial.print(x);
-    // Serial.print(", Y: ");
-    // Serial.println(y);
   }
-  targetFilt_L = filterRemote_L(target_L);
-  targetFilt_R = filterRemote_R(target_R);
 }
 
 
 void ProcessDynamixelData(const unsigned char ID, const int dataLength, const unsigned char* const Data) {
-
-  if (digitalRead(13)) digitalWrite(13, LOW);
-  else digitalWrite(13, HIGH);
   validMessage = 1;
   remoteTimeout = 0;
   if (Data[0] == 0x03) {  //write
@@ -223,21 +208,27 @@ void ProcessDynamixelData(const unsigned char ID, const int dataLength, const un
     int ySetpoint = Data[3] + 256 * Data[4];
     int buttons = Data[5] + 256 * Data[6];
 
-    if (buttons == 0) {
-      if (xSetpoint >= 0 && xSetpoint <= 255 && ySetpoint >= 0 && ySetpoint <= 255) {  // sanity check
-        if (ySetpoint < (127 - DEADZONE) || ySetpoint > (127 + DEADZONE) || xSetpoint < (127 - DEADZONE) || xSetpoint > (127 + DEADZONE)) {
+    if (buttons > 0) {
+      usingRadio = 1;
+    }
 
-          target_L = mapfloat(constrain((ySetpoint - 127) + (xSetpoint - 127), -127, 127), -127, 127, FASTTHRESHOLDRAD, -FASTTHRESHOLDRAD);
-          target_R = mapfloat(constrain((xSetpoint - 127) - (ySetpoint - 127), -127, 127), -127, 127, -FASTTHRESHOLDRAD, FASTTHRESHOLDRAD);
+    if (xSetpoint >= 0 && xSetpoint <= 255 && ySetpoint >= 0 && ySetpoint <= 255) {  // sanity check
+      if (ySetpoint < (127 - DEADZONE) || ySetpoint > (127 + DEADZONE) || xSetpoint < (127 - DEADZONE) || xSetpoint > (127 + DEADZONE)) {
+        usingRadio = 1;
 
-        } else {
+        target_L = mapfloat(constrain((ySetpoint - 127) + (xSetpoint - 127), -127, 127), -127, 127, FASTTHRESHOLDRAD, -FASTTHRESHOLDRAD);
+        target_R = mapfloat(constrain((xSetpoint - 127) - (ySetpoint - 127), -127, 127), -127, 127, -FASTTHRESHOLDRAD, FASTTHRESHOLDRAD);
+
+      } else {
+        if (buttons == 0) {
+          usingRadio = 0;
+        }
+
+        if (usingPS3 == 0) {
           target_L = 0;
           target_R = 0;
         }
       }
-    } else {
-      target_L = 0;
-      target_R = 0;
     }
   }
 

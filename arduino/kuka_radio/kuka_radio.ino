@@ -62,14 +62,8 @@ void loop() {
 
     if (nunchuk_read()) {
       // Read inputs and update maps
-      //      Serial.print(nunchuk_joystickX());
-      //      Serial.print("\t");
-      //      Serial.print(nunchuk_joystickY());
       aValue = limit(map(nunchuk_joystickX(), -125, 125, 0, 255), 1, 254);
-      bValue = limit(map(nunchuk_joystickY(), -125, 125, 0, 255), 1, 254);
-
-      // aValue = limit(nunchuk_joystickX(), -125, 125);
-      // bValue = limit(nunchuk_joystickY(), -125, 125);
+      bValue = limit(map(nunchuk_joystickY(), -125, 125, 0, 255),
 
       if (aValue < DEADZONE && aValue > -DEADZONE) {
         aValue = 0;
@@ -78,15 +72,7 @@ void loop() {
         bValue = 0;
       }
 
-
       cValue = 2 * nunchuk_buttonC() + nunchuk_buttonZ();
-
-      //      Serial.print("\t");
-      //      Serial.print(aValue);
-      //      Serial.print("\t");
-      //      Serial.print(bValue);
-      //      Serial.print("\t");
-      //      Serial.println(cValue);
 
       RobotWrite(13, aValue, bValue, cValue, 0, 0);
     }
