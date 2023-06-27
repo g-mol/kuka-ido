@@ -1,0 +1,1 @@
+Install the .ZIP libraries in the libraries folder in the Arduino IDE to use the code.
